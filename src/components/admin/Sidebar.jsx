@@ -21,7 +21,7 @@ function Sidebar() {
                 <li><a className="side-link active" href="#overview"><i className="bi bi-grid-1x2"></i>Overview</a></li>
                 <li><a className="side-link" href="#flights"><i className="bi bi-broadcast"></i>Flights<span className="badge-count">18</span></a></li>
                 <li><a className="side-link" href="#bookings"><i className="bi bi-ticket-perforated"></i>Bookings</a></li>
-                <li><a className="side-link" href="#fleet"><i className="bi bi-airplane"></i>Fleet</a></li>
+                {/* <li><Link className="side-link" to="/flets"><i className="bi bi-airplane"></i>Fleet</Link></li> */}
 
                 <li className="sn-label">Insights</li>
                 <li><a className="side-link" href="#revenue"><i className="bi bi-graph-up-arrow"></i>Revenue</a></li>

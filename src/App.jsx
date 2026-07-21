@@ -20,10 +20,8 @@ function App() {
                 <Route path="contacts" element={<ContactUs />} />
             </Route>
             <Route path="/administrator" element={<AdminLayout />}>
-
               <Route index element={<Dashboard />} />
-            {/*   <Route path="flights" element={<Flights />} />
-              <Route path="users" element={<Users />} /> */}
+              {/*   <Route path="users" element={<Users />} /> */}
 
           </Route>
 
