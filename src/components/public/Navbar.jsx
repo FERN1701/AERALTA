@@ -28,7 +28,8 @@ return(
                         <li className="nav-item"><a className="nav-link nav-link-cyber" href="#fleet">Fleet</a></li>
                         <li className="nav-item"><Link className="nav-link nav-link-cyber" to="/about">About Us</Link></li>
                         <li className="nav-item"><Link className="nav-link nav-link-cyber" to="/contacts">Contact</Link></li>
-                        <li className="nav-item ms-lg-3 mt-2 mt-lg-0"><a href="#book" className="btn btn-sun btn-sm">Manage Booking</a></li>
+                        <li className="nav-item ms-lg-3 mt-2 mt-lg-0"><Link to="/administrator" className="btn btn-sun btn-sm">Goto Admin</Link></li>
+                        {/* <li className="nav-item ms-lg-3 mt-2 mt-lg-0"><a href="#book" className="btn btn-sun btn-sm">Manage Booking</a></li> */}
                     </ul>
                     </div>
                 </div>

@@ -6,6 +6,8 @@ import MainDestination from './pages/Public/MainDestination';
 import AboutUs from './pages/Public/AboutUs';
 import ContactUs from './pages/Public/ContactUs';
 
+import AdminLayout from './layouts/AdminLayout'
+import Dashboard from './pages/Admin/Dashboard'
 function App() {
   
   return (
@@ -16,10 +18,15 @@ function App() {
                  <Route path="destinations" element={<MainDestination />} /> 
                 <Route path="about" element={<AboutUs />} />
                 <Route path="contacts" element={<ContactUs />} />
-                {/*<Route path="fleets" element={<Fleets />} />
-                
-                <Route path="login" element={<Login />} /> */}
             </Route>
+            <Route path="/administrator" element={<AdminLayout />}>
+
+              <Route index element={<Dashboard />} />
+            {/*   <Route path="flights" element={<Flights />} />
+              <Route path="users" element={<Users />} /> */}
+
+          </Route>
+
           </Routes>
 
     </> 
