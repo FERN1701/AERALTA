@@ -20,6 +20,7 @@ function Sidebar() {
                 <li className="sn-label">Operations</li>
                 <li><Link className="side-link active" to="/administrator"><i className="bi bi-grid-1x2"></i>Overview</Link></li>
                 <li><Link className="side-link" to="/administrator/flights"><i className="bi bi-broadcast"></i>Flights<span className="badge-count">18</span></Link></li>
+                <li><Link className="side-link" to="/administrator/airports"><i className="bi bi-airplane"></i>Airport<span className="badge-count">18</span></Link></li>
                 <li><Link className="side-link" to="/administrator/bookings"><i className="bi bi-ticket-perforated"></i>Bookings</Link></li>
                 <li><Link className="side-link" to="/administrator/fleets"><i className="bi bi-airplane"></i>Fleet</Link></li>
 

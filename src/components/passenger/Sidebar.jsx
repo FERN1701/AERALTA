@@ -30,7 +30,7 @@ function Sidebar() {
                 <li className="sn-label">Account</li>
                 <li><Link className="side-link" to="/myflight/profile"><i className="bi bi-person"></i>Profile</Link></li>
                 <li><a className="side-link" href="#"><i className="bi bi-gear"></i>Settings</a></li>
-                <li><a className="side-link" href="#"><i className="bi bi-box-arrow-right"></i>Sign out</a></li>
+                <li><Link className="side-link" to="/"><i className="bi bi-box-arrow-right"></i>Sign out</Link></li>
             </ul>
 
             <div className="sidebar-tier">

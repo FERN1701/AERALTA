@@ -10,6 +10,7 @@ import ContactUs from '../pages/Public/ContactUs';
 import AdminLayout from '../layouts/AdminLayout'
 import Dashboard from '../pages/Admin/Dashboard'
 import AdminFleets from '../pages/Admin/Fleets'
+import AdminAirports from '../pages/Admin/Airports'
 import AdminBookings from '../pages/Admin/Bookings'
 import AdminBookingDetails from '../pages/Admin/BookingDetails'
 import AdminFlights from '../pages/Admin/Flights'
@@ -37,6 +38,7 @@ export const router = createBrowserRouter([
         children: [
             { index: true, element: <Dashboard /> },
             { path: 'fleets', element: <AdminFleets /> },
+            { path: 'airports', element: <AdminAirports /> },
             { path: 'bookings', element: <AdminBookings /> },
             { path: 'booking-details', element: <AdminBookingDetails /> },
             // {
