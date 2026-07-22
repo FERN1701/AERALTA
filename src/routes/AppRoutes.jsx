@@ -15,6 +15,10 @@ import AdminBookingDetails from '../pages/Admin/BookingDetails'
 import AdminFlights from '../pages/Admin/Flights'
 import AdminProfile from '../pages/Admin/Profile'
 
+import PassengerLayout from '../layouts/PassengerLayout'
+import PassengerDashboard from '../pages/passenger/Dashboard'
+import PassengerProfile from '../pages/passenger/Profile'
+
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -45,6 +49,16 @@ export const router = createBrowserRouter([
         ],
     },
 
+    {
+        path: '/myflight',
+        element: <PassengerLayout />,
+        children: [
+            { index: true, element: <PassengerDashboard /> },
+            { path: 'profile', element: <PassengerProfile /> },
+            // { path: 'about', element: <AboutUs /> },
+            // { path: 'contacts', element: <ContactUs /> },
+        ],
+    },
     
 
     { path: '*', element: <Navigate to="/" replace /> } 
