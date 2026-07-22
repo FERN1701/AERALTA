@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import "../assets/admin/admin.css"
 import Sidebar from "../components/admin/Sidebar";
 import Topbar from "../components/admin/Topbar";
+
+
 function AdminLayout() {
 
  return (
@@ -26,9 +28,9 @@ export default AdminLayout;
 
 
 
-//About us
-//Flights
-//Booiking
-//Boarding Sequence
-//Fleets 
-//forms contact us
+//About us []
+//Flights []
+//Booiking []
+//Boarding Sequence []
+//Fleets [/]
+//forms contact us []

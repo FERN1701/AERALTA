@@ -9,6 +9,9 @@ import ContactUs from '../pages/Public/ContactUs';
 
 import AdminLayout from '../layouts/AdminLayout'
 import Dashboard from '../pages/Admin/Dashboard'
+import AdminFleets from '../pages/Admin/Fleets'
+import AdminBookings from '../pages/Admin/Bookings'
+import AdminBookingDetails from '../pages/Admin/BookingDetails'
 
 
 export const router = createBrowserRouter([
@@ -28,7 +31,13 @@ export const router = createBrowserRouter([
         element: <AdminLayout />,
         children: [
             { index: true, element: <Dashboard /> },
-            // { path: 'destinations', element: <MainDestination /> },
+            { path: 'fleets', element: <AdminFleets /> },
+            { path: 'bookings', element: <AdminBookings /> },
+            { path: 'booking-details', element: <AdminBookingDetails /> },
+            // {
+            //     path: "bookings/:bookingId",
+            //     element: <AdminBookingDetails />
+            // },
         ],
     },
 
