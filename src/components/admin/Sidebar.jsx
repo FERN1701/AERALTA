@@ -18,8 +18,8 @@ function Sidebar() {
 
             <ul className="side-nav">
                 <li className="sn-label">Operations</li>
-                <li><a className="side-link active" href="#overview"><i className="bi bi-grid-1x2"></i>Overview</a></li>
-                <li><a className="side-link" href="#flights"><i className="bi bi-broadcast"></i>Flights<span className="badge-count">18</span></a></li>
+                <li><Link className="side-link active" to="/administrator"><i className="bi bi-grid-1x2"></i>Overview</Link></li>
+                <li><Link className="side-link" to="/administrator/flights"><i className="bi bi-broadcast"></i>Flights<span className="badge-count">18</span></Link></li>
                 <li><Link className="side-link" to="/administrator/bookings"><i className="bi bi-ticket-perforated"></i>Bookings</Link></li>
                 <li><Link className="side-link" to="/administrator/fleets"><i className="bi bi-airplane"></i>Fleet</Link></li>
 
@@ -33,6 +33,8 @@ function Sidebar() {
                 <li><Link className="side-link" to="/"><i className="bi bi-box-arrow-right"></i>Sign out</Link></li>
             </ul>
 
+            
+            <Link to='/administrator/profile'>
             <div className="sidebar-admin">
                 <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" alt="Admin avatar" />
                 <div>
@@ -40,6 +42,7 @@ function Sidebar() {
                 <div className="role">OPS ADMINISTRATOR</div>
                 </div>
             </div>
+            </Link>
         </aside>
         
         </>

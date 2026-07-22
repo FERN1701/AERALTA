@@ -12,7 +12,8 @@ import Dashboard from '../pages/Admin/Dashboard'
 import AdminFleets from '../pages/Admin/Fleets'
 import AdminBookings from '../pages/Admin/Bookings'
 import AdminBookingDetails from '../pages/Admin/BookingDetails'
-
+import AdminFlights from '../pages/Admin/Flights'
+import AdminProfile from '../pages/Admin/Profile'
 
 export const router = createBrowserRouter([
     {
@@ -38,6 +39,9 @@ export const router = createBrowserRouter([
             //     path: "bookings/:bookingId",
             //     element: <AdminBookingDetails />
             // },
+            
+            { path: 'flights', element: <AdminFlights /> },
+            { path: 'profile', element: <AdminProfile /> },
         ],
     },
 

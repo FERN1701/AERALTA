@@ -2,6 +2,15 @@
 
 function BookingDetails(){
 
+    const status = 1
+    const status2 = true
+    if (status == 0) {
+        return(
+            <>
+            Test 
+            </>
+        )
+    }
 
     return(
 
@@ -39,10 +48,12 @@ function BookingDetails(){
                             <div className="bkd-pax-name">Juan Dela Cruz</div>
                             <div className="bkd-pax-meta">Mabuhay+ · <span className="bkd-tier">Elite Tier</span></div>
                             </div>
-                            <div className="bkd-pax-contact">
-                            <div><i className="bi bi-envelope"></i> juan.delacruz@email.com</div>
-                            <div><i className="bi bi-telephone"></i> +63 917 555 0142</div>
+                            { status2 ? <div className="bkd-pax-contact">
+                                <div><i className="bi bi-envelope"></i> juan.delacruz@email.com</div>
+                                <div><i className="bi bi-telephone"></i> +63 917 555 0142</div>
                             </div>
+                            : null }
+                            
                         </div>
                         <div className="bkd-grid mt-3">
                             <div>

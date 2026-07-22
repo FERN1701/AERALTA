@@ -5,7 +5,7 @@ function Fleets(){
 
     return(
         <>
-        <section className="section-pad" id="fleet">
+        <section className="" id="fleet">
             <div className="container-fluid">
 
                 <div className="page-head mb-4">

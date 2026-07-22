@@ -108,7 +108,7 @@ function Bookings(){
     return(
         <>
         
-            <section className="section-pad" id="bookings">
+            <section className="" id="bookings">
                 <div className="container-fluid">
 
                     <div className="page-head mb-4">

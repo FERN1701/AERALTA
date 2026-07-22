@@ -1,4 +1,4 @@
-
+import { Routes, Route, Link } from "react-router-dom";
 
 function Topbar(){
 
@@ -14,7 +14,7 @@ function Topbar(){
                 <div className="topbar-right">
                 <span className="live-pill d-none d-md-inline-flex"><span className="blip"></span>GRID LIVE</span>
                 <button className="icon-btn"><i className="bi bi-bell"></i><span className="dot"></span></button>
-                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" alt="Admin avatar" style={{width:"38px",height:"38px",borderRadius:"50%",border:"1px solid var(--line)"}} />
+                <Link to='/administrator/profile'><img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=200&auto=format&fit=crop" alt="Admin avatar" style={{width:"38px",height:"38px",borderRadius:"50%",border:"1px solid var(--line)"}} /></Link>
                 </div>
             </div>
         
