@@ -11,7 +11,7 @@ function Airports(){
                 <div className="page-head mb-4">
                 <span className="eyebrow">Fleet Registry · Ops Deck</span>
                 <h1 className="fleet-title">Airport Route</h1>
-                <p className="fleet-sub">Register new aircraft and monitor the status of every tail in service.</p>
+                <p className="fleet-sub">Register new airport and monitor the status of every tail in service.</p>
                 </div>
 
                 <div className="row g-4">
@@ -19,67 +19,27 @@ function Airports(){
                 <div className="col-lg-4">
                     <div className="fleet-panel">
                     <div className="fleet-panel-head">
-                        <p className="fleet-panel-title">Add aircraft</p>
-                        <p className="fleet-panel-sub">Register a new tail into the fleet</p>
+                        <p className="fleet-panel-title">Airports Destination</p>
+                        <p className="fleet-panel-sub">Register a new routes to serve</p>
                     </div>
                     <form className="row g-3" onsubmit="return false;">
                         <div className="col-12 fleet-field">
-                        <label>Aircraft Type</label>
-                        <select className="form-select">
-                            <option>Airbus A350‑900</option>
-                            <option>Boeing 777‑300ER</option>
-                            <option>Airbus A321neo</option>
-                            <option>Airbus A320</option>
-                            <option>ATR 72‑600</option>
-                        </select>
-                        </div>
-                        <div className="col-6 fleet-field">
-                        <label>Registration No.</label>
-                        <input type="text" className="form-control" placeholder="RP‑A501" />
-                        </div>
-                        <div className="col-6 fleet-field">
-                        <label>Fleet Code</label>
-                        <input type="text" className="form-control" placeholder="AE‑350‑01" />
-                        </div>
-                        <div className="col-6 fleet-field">
-                        <label>Seat Capacity</label>
-                        <input type="number" className="form-control" placeholder="295" />
-                        </div>
-                        <div className="col-6 fleet-field">
-                        <label>Range (km)</label>
-                        <input type="number" className="form-control" placeholder="15000" />
-                        </div>
-                        <div className="col-6 fleet-field">
-                        <label>Cabin Config</label>
-                        <select className="form-select">
-                            <option>3‑Class</option>
-                            <option>2‑Class</option>
-                            <option>1‑Class</option>
-                        </select>
-                        </div>
-                        <div className="col-6 fleet-field">
-                        <label>Status</label>
-                        <select className="form-select">
-                            <option>Active</option>
-                            <option>In Maintenance</option>
-                            <option>Grounded</option>
-                            <option>Standby</option>
-                        </select>
+                            <label>Airport</label>
+                            <input type="text" name="" id="" className="form-select" />
                         </div>
                         <div className="col-12 fleet-field">
-                        <label>Home Base</label>
-                        <select className="form-select">
-                            <option>MNL — Manila</option>
-                            <option>CEB — Cebu</option>
-                            <option>DVO — Davao</option>
-                        </select>
+                        <label>Airport Category</label>
+                            <select className="form-select">
+                                <option>Domestic Flight</option>
+                                <option>Internantional Flight</option>
+                            </select>
                         </div>
                         <div className="col-12 fleet-field">
-                        <label>Notes</label>
-                        <textarea className="form-control" rows="3" placeholder="Delivery date, livery, special config…"></textarea>
+                            <label>Address</label>
+                            <input type="text" name="" id="" className="form-select" />
                         </div>
                         <div className="col-12 d-flex gap-2 mt-1">
-                        <button className="btn btn-sun" type="submit">Add to Fleet <i className="bi bi-plus-lg ms-1"></i></button>
+                        <button className="btn btn-sun" type="submit">Submit <i className="bi bi-plus-lg ms-1"></i></button>
                         <button className="btn btn-outline-cyber" type="reset">Clear</button>
                         </div>
                     </form>
